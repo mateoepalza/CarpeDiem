@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat Bold";
+}
+
+#load {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  background-image: url("../img/load_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-center {
+  width: 80%;
+  background: #a29692;
+  border-radius: 50px;
+  padding: 0px 100px;
+}
+
+.w-top {
+  padding: 60px 0px;
+}
+.w-top h1 {
+  font-size: 45px;
+  letter-spacing: 30px;
+  text-align: center;
+  color: #FFF;
+}
+
+.w-center {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 25%;
+  height: auto;
+  padding-right: 2px;
+}
+
+.box:nth-of-type(4) {
+  padding-right: 0px;
+}
+
+.number {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  border-radius: 20px;
+  padding: 40px 0px;
+}
+.number h1 {
+  font-size: 160px;
+  text-align: center;
+}
+
+.text {
+  padding: 30px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.text span {
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: #c9c3c1;
+}
+
+.w-down {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.w-down ul {
+  list-style-type: none;
+}
+
+.w-down li {
+  display: block;
+  width: 220px;
+  height: 45px;
+  background-color: #FFF;
+}
+
+.w-down > ul > li {
+  border-radius: 8px;
+}
+
+.w-down li a {
+  display: block;
+  width: 220px;
+  height: 45px;
+  line-height: 40px;
+  text-decoration: none;
+  letter-spacing: 13px;
+  color: #a29692;
+  text-align: center;
+}
+
+.w-down li ul {
+  display: none;
+}
+
+.w-down li ul li:nth-child(2) {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.w-down li:hover > ul, .w-down li:hover {
+  display: block;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/*# sourceMappingURL=index.css.map */
