@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.side-top {
+  width: 100%;
+  height: 8%;
+  background-color: red;
+}
+
+.side-bottom {
+  width: 100%;
+  height: 92%;
+  background-color: blue;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#form-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#form {
+  width: 100%;
+  height: 60%;
+  background-color: gray;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+#form table {
+  width: 800px;
+}
+#form label {
+  display: inline-block;
+  padding: 5px;
+  height: 40px;
+  background-color: #333;
+  line-height: 40px;
+  color: #FFF;
+}
+#form input {
+  height: 40px;
+  width: 70%;
+}
+
+.info-left {
+  width: 18%;
+  max-width: 250px;
+  height: 100%;
+  background-color: purple;
+}
+
+.info-left-top {
+  width: 100%;
+  height: 50%;
+}
+.info-left-top img {
+  width: 350px;
+  position: fixed;
+}
+
+.info-left-bottom {
+  width: 100%;
+  height: 50%;
+  background-image: url("../img/fig01.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.info-right {
+  width: 100%;
+  height: 100%;
+  padding-right: 150px;
+  background-color: orange;
+}
+
+.slide-img {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+}
+
+.info {
+  width: 100%;
+  height: 40%;
+  background-color: gray;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.info-logo {
+  width: 30%;
+  height: 100%;
+  border-right: 5px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#kids {
+  background-image: url("../img/fig03.png");
+}
+
+#padres {
+  background-image: url("../img/fig05.png");
+}
+
+#jovenes {
+  background-image: url("../img/fig06.png");
+}
+
+#carpe {
+  background-image: url("../img/fig07.png");
+}
+
+#nosotros {
+  background-image: url("../img/fig08.png");
+}
+
+.info-text {
+  width: 80%;
+  height: 100%;
+  background-color: cyan;
+  padding: 20px;
+}
+.info-text p {
+  font-family: "Montserrat Bold";
+}
+
+/*# sourceMappingURL=index2.css.map */
