@@ -29,17 +29,27 @@
   width: 30%;
   height: 100%;
 
+  ul{
+    height: 100%;
+  }
+
   li{
     list-style-type: none;
+    height: 100%;
+    a{
+        display: block;
+        height: 100%;
+    }
 
-    ul li{
+
+    ul li a{
       display: none;
     }
 
   }
 }
 
-li:hover ul li{
+li:hover ul li a{
   display: block;
 }
 .side-bottom{
@@ -112,8 +122,35 @@ li:hover ul li{
 .slide-img{
   width: 100%;
   height: 60%;
-  background-color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
 }
+#slide{
+  background: url("../Slider/1/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1s;
+}
+.menu-slide{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  input{
+    background-color: #FFF;
+    margin: 0px 10px;
+    width: 15px;
+    height: 15px;
+  }
+}
+.menu-slide input:nth-child(2){height: 50px;}
 .info{
   width: 100%;
   height: 40%;
