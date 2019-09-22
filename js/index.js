@@ -40,8 +40,12 @@ window.onload = function(){
   countDown('Oct 10 2019 23:59:59 GMT-0500',new Array('dias','horas','minutos','segundos'), 'Mensaje');
 
   setInterval(() => {
-    document.getElementById("load").style.display = "none";
+    document.getElementById("load").style.opacity = "0";
   },1000);
+  setInterval(() => {
+
+    document.getElementById("load").style.display = "none";
+  },2000);
 
 
 }
