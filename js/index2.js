@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//options here
-		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixth', 'seventh'],
+		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixth', 'seventh', 'ninenth'],
 		autoScrolling:true,
 		scrollHorizontally: true
 	});

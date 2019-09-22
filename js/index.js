@@ -37,7 +37,7 @@ window.onload = function(){
     },1000)
   }
 
-  countDown('Aug 22 2019 23:59:59 GMT-0500',new Array('dias','horas','minutos','segundos'), 'Mensaje');
+  countDown('Oct 10 2019 23:59:59 GMT-0500',new Array('dias','horas','minutos','segundos'), 'Mensaje');
 
   setInterval(() => {
     document.getElementById("load").style.display = "none";
