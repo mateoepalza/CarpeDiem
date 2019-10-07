@@ -196,6 +196,7 @@
   justify-content: flex-end;
 }
 #slide{
+  background: url("../Slider/1/1.jpg");
   background-position: center 30%;
   @extend %image-slide-config;
 }
