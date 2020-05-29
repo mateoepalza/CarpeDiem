@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/inscripcion.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/inscripcion.js"></script>
+  </head>
+  <body>
+    <div id="alert-parent">
+    </div>
+    <div class="form-container">
+      <!-- Tabla de datos personales -->
+      <div id="cont-back">
+        <div id="form-title">
+          <div colspan="3">
+              <img src="img/logo_form.png">
+          </div>
+          <div colspan="3">
+              <h1>FORMULARIO DE INSCRIPCIÓN PARTICIPANTES</h1>
+          </div>
+        </div>
+        <table id="dat-personales">
+          <tr>
+            <th colspan="6"><h2>DATOS PERSONALES</h2></th>
+          </tr>
+          <tr>
+            <td><label for="dat-per-nombre" class="lab">NOMBRES</label></td>
+            <td colspan="2"><input type="text" id="dat-per-nombre" name="nm-dat-per-nombre" maxlength="80"></td>
+            <td><label for= "dat-per-apellidos" class="lab">APELLIDOS</label></td>
+            <td colspan="2"><input type="text" id="dat-per-apellidos" name="nm-dat-per-apellidos" maxlength="80"></td>
+          </tr>
+          <tr>
+            <td><label class="lab">T. DOCUMENTO</label></td>
+            <td class="radioOption">C.C<input type="radio" name="tipoID" value="C.C" checked>T.I<input type="radio" name="tipoID" value="T.I"></td>
+            <td><label for="dat-per-id" class="lab" maxlength="11">N.IDENTIFICACIÓN</label></td>
+            <td><input type="text" id="dat-per-id" name="nm-dat-per-id" maxlength="11"></td>
+            <td><label class="lab">SEXO</label></td>
+            <td class="radioOption">F<input type="radio" name="sexo" value="F" checked> M <input type="radio" name="sexo" value="M"></td>
+          </tr>
+          <tr>
+            <td><label for="dat-per-fecha" class="lab">FECHA DE NACIMIENTO</label></td>
+            <td><input type="date" id="dat-per-fecha" name="nm-dat-per-fecha"></td>
+            <td><label for="dat-per-lugarnto" class="lab">LUGAR DE NACIMIENTO</label></td>
+            <td><input type="text" id="dat-per-lugarnto" name="nm-dat-per-lugarnto" maxlength="80"></td>
+            <td><label for="dat-per-edad" class="lab">EDAD</label></td>
+            <td><input type="text" id="dat-per-edad" name="nm-dat-per-edad" maxlength="2"></td>
+          </tr>
+          <tr>
+            <td><label for="dat-per-eps" class="lab">EPS</label></td>
+            <td><input type="text" id="dat-per-eps" name="nm-dat-per-eps" maxlength="80"></td>
+            <td><label for="dat-per-dir" class="lab">DIRECCION</label></td>
+            <td><input type="text" id="dat-per-dir" name="nm-dat-per-dir" maxlength="80"></td>
+            <td><label for="dat-per-ciudad" class="lab">CIUDAD</label></td>
+            <td><input type="text" id="dat-per-ciudad" name="nm-dat-per-ciudad" maxlength="80"></td>
+          </tr>
+          <tr>
+            <td><label for="dat-per-barrio" class="lab">BARRIO</label></td>
+            <td><input type="text" id="dat-per-barrio" name="nm-dat-per-barrio" maxlength="80"></td>
+            <td><label for="dat-per-uni" class="lab">UNIVERSIDAD O COLEGIO</label></td>
+            <td><input type="text" id="dat-per-uni" name="nm-dat-per-uni" maxlength="80"></td>
+            <td><label for="dat-per-tel" class="lab">TELEFONO FIJO</label></td>
+            <td><input type="text" id="dat-per-tel" name="nm-dat-per-tel" maxlength="7"></td>
+          </tr>
+          <tr>
+            <td><label for="dat-per-cel" class="lab">CELULAR</label></td>
+            <td><input type="text" id="dat-per-cel" name="nm-dat-per-cel" maxlength="10"></td>
+            <td><label for="dat-per-email" class="lab">CORREO ELECTRONICO</label></td>
+            <td><input type="text" id="dat-per-email" name="nm-dat-per-email" maxlength="80"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><label for="dat-per-jv" class="lab">¿Cómo te enteraste de JV o quién te invitó?</label></td>
+            <td colspan="4"><input type="text" id="dat-per-jv" name="nm-dat-per-jv" maxlength="300"></td>
+          </tr>
+        </table>
+
+        <!-- Tabla de antecedentes -->
+
+        <table id="antecedentes">
+          <tr>
+            <th colspan="4"><h2>ANTECEDENTES MÉDICOS</h2></th>
+          </tr>
+          <tr>
+            <td><span class="lab">¿TOMAS ALGÚN MEDICAMENTO?</span></td>
+            <td>
+              <select class="selection" id="dat-ant-medicamento" name="nm-dat-ant-medicamento">
+                <option selected="selected" value="vacio">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+              <input type="text" id="txt-dat-ant-medicamento" name="txt-nm-dat-ant-medicamento" class="cual" placeholder="¿Cuál?" maxlength="80">
+            </td>
+            <td><span class="lab">¿TIENES LESIONES DE ALGÚN TIPO?</span></td>
+            <td>
+              <select class="selection" id="dat-ant-lesiones" name="nm-dat-ant-lesiones">
+                <option selected="selected" value="vacio">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+              <input type="text" id="txt-dat-ant-lesiones" name="txt-nm-dat-ant-lesiones" class="cual" placeholder="¿Cuál?" maxlength="100">
+            </td>
+          </tr>
+          <tr>
+            <td><span class="lab">¿SUFRES DE ALGUNA ALERGIA?</span></td>
+            <td>
+              <select class="selection" id="dat-ant-alergia" name="nm-dat-ant-alergia">
+                <option selected="selected" value="vacio">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+              <input type="text"  id="txt-dat-ant-alergia" name="txt-nm-dat-ant-alergia" class="cual"  placeholder="¿Cuál?" maxlength="100">
+            </td>
+            <td><span class="lab">¿TIENES RECOMENDACIONES MÉDICAS ESPECIALES?</span></td>
+            <td>
+              <select class="selection" id="dat-ant-recomendaciones" name="nm-dat-ant-recomendaciones">
+                <option selected="selected" value="vacio">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+              <input type="text" id="txt-dat-ant-recomendaciones" name="txt-nm-dat-ant-recomendaciones" class="cual"  placeholder="¿Cuál?" maxlength="200">
+            </td>
+          </tr>
+          <tr>
+            <td><span class="lab">¿SUFRES DE ASMA?</span></td>
+            <td>
+              <select class="selection" id="dat-ant-asma" name="nm-dat-ant-asma">
+                <option selected="selected" value="vacio">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+              <input type="text" id="txt-dat-ant-asma" name="txt-nm-dat-ant-asma" class="cual" placeholder="¿Cuál?" maxlength="80">
+            </td>
+            <td><span class="lab">¿HAS TENIDO INTERVENCIONES QUIRÚRGICAS RECIENTES?</span></td>
+            <td>
+              <select class="selection" id="dat-ant-intervenciones" name="nm-dat-ant-intervenciones">
+                <option selected="selected" value="vacio">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+              <input type="text" id="txt-dat-ant-intervenciones" name="txt-nm-dat-ant-intervenciones" class="cual"  placeholder="¿Cuál?" maxlength="200">
+            </td>
+          </tr>
+          <tr>
+            <td><span class="lab">¿SUFRES DE ALGUNA ENFERMEDAD?</span></td>
+            <td>
+              <select class="selection" id="dat-ant-enfermedad" name="nm-dat-ant-enfermedad">
+                <option selected="selected" value="vacio">--Seleccione--</option>
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+              <input type="text" id="txt-dat-ant-enfermedad" name="txt-nm-dat-ant-enfermedad" class="cual" placeholder="¿Cuál?" maxlength="200">
+            </td>
+            <td><span class="lab">GRUPO SANGUINEO RH</span></td>
+            <td>
+              <select class="selection" id="dat-ant-grupo" name="nm-dat-ant-grupo">
+                <option selected value="vacio">--Seleccione--</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Tabla de contacto de emergencia-->
+
+        <table id="emergencia">
+          <tr>
+            <th colspan="4"><h2>DATOS DE CONTACTO EN CASO DE EMERGENCIA</h2></th>
+          </tr>
+          <tr>
+            <td><label class="lab">PARENTEZCO/RELACIÓN</label></td>
+            <td colspan="3">PADRE <input type="radio" name="parentezco" value="Padre" checked> MADRE <input type="radio" name="parentezco" value="Madre"> OTRO <input type="radio" name="parentezco" value="Otro"> <input type="text" id="txt-dat-ant-parentezco" name="txt-nm-dat-ant-parentezco" class="cual" placeholder="¿Cuál?" maxlength="50"> </td>
+          </tr>
+          <tr>
+            <td><label for="dat-emer-nombre" class="lab">NOMBRES</label></td>
+            <td><input type="text" id="dat-emer-nombre" name="nm-dat-emer-nombre" maxlength="80"></td>
+            <td><label for="dat-emer-apellido" class="lab">APELLIDOS</label></td>
+            <td><input type="text" id="dat-emer-apellido" name="nm-dat-emer-apellido" maxlength="80"></td>
+          </tr>
+          <tr>
+            <td><label for="dat-emer-nID" class="lab">NO IDENTIFICACIÓN</label></td>
+            <td><input type="text" id="dat-emer-nID" name="nm-dat-emer-nID" maxlength="11"></td>
+            <td><label for="dat-emer-dir" class="lab">DIRECCIÓN</label></td>
+            <td><input type="text" id="dat-emer-dir" name="nm-dat-emer-dir" maxlength="80"></td>
+          </tr>
+          <tr>
+            <td><label for="dat-emer-tel" class="lab">TELEFONO FIJO</label></td>
+            <td><input type="text" id="dat-emer-tel" name="nm-dat-emer-tel" maxlength="7"></td>
+            <td><label for="dat-emer-cel" class="lab">CELULAR</label></td>
+            <td><input type="text" id="dat-emer-cel" name="nm-dat-emer-cel" maxlength="10"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><span class="lab">FIRMA DEL PARTICIPANTE Y/O REPRESENTANTE DEL MENOR </span></td>
+            <td colspan="2"><input type="checkbox" id="checkTerminos">HE LEIDO Y ACEPTO TERMINOS Y CONDICIONES</td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <button id="btn-enviar-reg" >Enviar</button>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+
+
+    </div>
+  </body>
+</html>

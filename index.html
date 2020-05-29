@@ -1,70 +1,421 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CarpeDiem</title>
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script>
-  </head>
-  <body>
-    <div id="load">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="css/index2.css">
+
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/index2.js"></script>
+  <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+</head>
+<body>
+	<div id="load">
+	</div>
+	<div id="alert-parent">
+	</div>
+  <div id="fullpage">
+
+		<div class="section" data-anchor="firstPage">
+			<div class="wrapper">
+				<div class="wrapper-center">
+	        <div class="w-top">
+	          <h1>CUENTA - REGRESIVA</h1>
+	        </div>
+	        <div class="w-center">
+	          <div class="box">
+	            <div class="number">
+	              <h1 id ="dias">00</h1>
+	            </div>
+	            <div class="text">
+	              <span>DIAS</span>
+	            </div>
+	          </div>
+	          <div class="box">
+	            <div class="number">
+	              <h1 id ="horas">00</h1>
+	            </div>
+	            <div class="text">
+	              <span>HORAS</span>
+	            </div>
+	          </div>
+	          <div class="box">
+	            <div class="number">
+	              <h1 id ="minutos">00</h1>
+	            </div>
+	            <div class="text">
+	              <span>MINUTOS</span>
+	            </div>
+	          </div>
+	          <div class="box">
+	            <div class="number">
+	              <h1 id ="segundos">00</h1>
+	            </div>
+	            <div class="text">
+	              <span>SEGUNDOS</span>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="w-down">
+	          <ul>
+	            <li>
+	              <a href="#">FOLLOW</a>
+	              <ul>
+	                <li>
+	                  <a href="https://www.facebook.com/JValerosos/" target="_blank"><img src="img/logo_fb.png">FACEBOOK</a>
+	                </li>
+	                <li>
+	                  <a href="https://instagram.com/jovenesvalerosos?igshid=1df4w0poo86i7" target="_blank"><img src="img/logo_inst.png">INSTAGRAM</a>
+	                </li>
+	              </ul>
+	            </li>
+	          </ul>
+	        </div>
+	      </div>
+			</div>
     </div>
-    <div id="wrapper">
-      <div class="wrapper-center">
-        <div class="w-top">
-          <h1>CUENTA - REGRESIVA</h1>
+  	<div class="section" data-anchor="secondPage">
+      <div class="side-top">
+				<div class="side-top-left">
+					<h1>JÓVENES - VALEROSOS</h1>
+				</div>
+				<div class="side-top-right">
+					<ul>
+						<li>
+							<a href="#">▼ JÓVENES VALEROSOS S.A.S</a>
+							<ul>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+      </div>
+      <div class="side-bottom">
+        <div class="info-left">
+          <div class="info-left-top">
+            <img src="img/fig02.png">
+          </div>
+          <div class="info-left-bottom"></div>
         </div>
-        <div class="w-center">
-          <div class="box">
-            <div class="number">
-              <h1 id ="dias">00</h1>
+        <div class="info-right">
+					<div class="slide-container">
+						<div id="slide" class="slide-img">
+							<div class="menu-slide">
+								<input type="radio" name="img1" value="1" checked>
+								<input type="radio" name="img1" value="2">
+								<input type="radio" name="img1" value="3">
+								<input type="radio" name="img1" value="4">
+							</div>
+	          </div>
+					</div>
+          <div class="info">
+            <div class="info-logo">
             </div>
-            <div class="text">
-              <span>DIAS</span>
-            </div>
-          </div>
-          <div class="box">
-            <div class="number">
-              <h1 id ="horas">00</h1>
-            </div>
-            <div class="text">
-              <span>HORAS</span>
-            </div>
-          </div>
-          <div class="box">
-            <div class="number">
-              <h1 id ="minutos">00</h1>
-            </div>
-            <div class="text">
-              <span>MINUTOS</span>
+            <div class="info-text">
+              <p class="info-text-para" scroll="true">Jóvenes valerosos SAS es una empresa que dirige entrenamientos de liderazgo, empoderamiento personal, inteligencia emocional y oratoria para niños, jóvenes y adultos. Haciendo un acompañamiento y seguimiento en los entrenamientos desde la piscología y la cooperación humana.
+Somos una empresa de jóvenes para jóvenes. </p>
+
             </div>
           </div>
-          <div class="box">
-            <div class="number">
-              <h1 id ="segundos">00</h1>
-            </div>
-            <div class="text">
-              <span>SEGUNDOS</span>
-            </div>
-          </div>
-        </div>
-        <div class="w-down">
-          <ul>
-            <li>
-              <a href="#">FOLLOW</a>
-              <ul>
-                <li>
-                  <a href="#"><img src="img/logo_fb.png">FACEBOOK</a>
-                </li>
-                <li>
-                  <a href="#"><img src="img/logo_inst.png">INSTAGRAM</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
-  </body>
+		<div class="section" data-anchor="thirdPage">
+      <div class="side-top">
+				<div class="side-top-left">
+					<h1>JÓVENES - VALEROSOS</h1>
+				</div>
+				<div class="side-top-right">
+					<ul>
+						<li>
+							<a href="#">▼ CARPEDIEM</a>
+							<ul>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+      </div>
+      <div class="side-bottom">
+        <div class="info-left">
+          <div class="info-left-top">
+            <img src="img/fig02.png">
+          </div>
+          <div class="info-left-bottom"></div>
+        </div>
+        <div class="info-right">
+					<div class="slide-container">
+						<div id="slide3" class="slide-img">
+							<!--<div class="menu-slide6">
+								<input type="radio" name="img1" value="1" checked>
+								<input type="radio" name="img1" value="2">
+								<input type="radio" name="img1" value="3">
+								<input type="radio" name="img1" value="4">
+								<input type="radio" name="img1" value="5">
+							</div>-->
+	          </div>
+					</div>
+          <div class="info">
+            <div id="carpe" class="info-logo">
+            </div>
+            <div class="info-text">
+              <p class="info-text-para">Carpe Diem es un evento de cuatro días en el que hay movimiento, baile, canto, convivencia, cooperación, diversión, aprendizaje y un sin fin de actividades con un toque emocional que llevan al participante a explorar nuevos espacios de su ser para así conseguir los resultados que visionar los resultados que quiere para su vida. Carpe Diem es un evento único en Colombia que trabaja al mismo tiempo con cientos de jóvenes para que al salir del salón, estén dispuestos a impactar positivamente su vida, su familia y su entorno. En Carpe Diem hay: Conferencias, actividades grupales, presentaciones de talentos, experiencias de marca y como principal componente, un entrenamiento profundo de actividades vivenciales para trabajar la inteligencia emocional, la cooperación y la oratoria en los jóvenes.</p>
+              <button>Inscribirse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" data-anchor="fourthPage">
+      <div class="side-top">
+				<div class="side-top-left">
+					<h1>JÓVENES - VALEROSOS</h1>
+				</div>
+				<div class="side-top-right">
+					<ul>
+						<li>
+							<a href="#">▼ JÓVENES VALEROSOS S.A.S</a>
+							<ul>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+      </div>
+      <div id="form-page" class="side-bottom">
+				<img src="img/fig02.png" id="imgFondo">
+
+					<div id="form">
+		          <table id="Formulario">
+		            <tr>
+		              <th colspan="2">
+										<img src="img/form.png">
+									</th>
+		            </tr>
+		            <tr>
+		              <td><label class="etiqueta" for="nombre">NAME</label><input id="nombre" type="text" name="nombre"></td>
+		              <td><label class="etiqueta" for="apellido" >LAST NAME</label><input id="apellido" type="text" name="apellido" ></td>
+		            </tr>
+		            <tr>
+		              <td colspan="2"><label class="etiqueta" for="email" >EMAIL</label><input id="email" type="email" name="email"></td>
+		            </tr>
+		            <tr>
+		              <td><label class="etiqueta" for="telefono">CONTACT</label><input type="text" id="telefono" name="telefono" ></td>
+		              <td><input type="checkbox" id="check-box"><span>HE LEIDO Y ACEPTO TERMINOS Y CONDICIONES</span></td>
+		            </tr>
+								<tr>
+									<td colspan="2">
+										<button id="btn-enviar" type="button">ENVIAR</button>
+									</td>
+								</tr>
+		          </table>
+	        </div>
+      </div>
+    </div>
+  	<div class="section" data-anchor="fifthPage">
+      <div class="side-top">
+				<div class="side-top-left">
+					<h1>JÓVENES - VALEROSOS</h1>
+				</div>
+				<div class="side-top-right">
+					<ul>
+						<li>
+							<a href="#">▼ JV KIDS</a>
+							<ul>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+      </div>
+      <div class="side-bottom">
+        <div class="info-left">
+          <div class="info-left-top">
+            <img src="img/fig02.png">
+          </div>
+          <div class="info-left-bottom"></div>
+        </div>
+        <div class="info-right">
+					<div class="slide-container">
+						<div id="slide1" class="slide-img">
+							<!--<div class="menu-slide4">
+								<input type="radio" name="img1" value="1" checked>
+								<input type="radio" name="img1" value="2">
+								<input type="radio" name="img1" value="3">
+								<input type="radio" name="img1" value="4">
+								<input type="radio" name="img1" value="5">
+							</div>-->
+	          </div>
+					</div>
+          <div class="info">
+            <div id="kids" class="info-logo">
+            </div>
+            <div class="info-text">
+              <p class="info-text-para">Es un entrenamiento experiencial de inteligencia emocional diseñado para niños de 8 a 12 años de edad; dividido en tres fases: Chispa, Llama y Hoguera, secuenciales que llevan a los niños participantes a cultivar valores de agradecimiento, comunicación y acción que los lleven a conseguir resultados a nivel personal y familiar. También se hace un trabajo con padres para así poner en sintonía de crecimiento al hogar. (Durante el proceso se hace un acompañamiento por parte del staff y de psicología con sesiones personalizadas o familiares).</p>
+<button>Inscribirse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  	<!--<div class="section" data-anchor="fifthPage">
+      <div class="side-top">
+				<div class="side-top-left">
+					<h1>JÓVENES - VALEROSOS</h1>
+				</div>
+				<div class="side-top-right">
+					<ul>
+						<li>
+							<a href="#">▼ JV VALEROSOS</a>
+							<ul>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+      </div>
+      <div class="side-bottom">
+        <div class="info-left">
+          <div class="info-left-top">
+            <img src="img/fig02.png">
+          </div>
+          <div class="info-left-bottom"></div>
+        </div>
+        <div class="info-right">
+					<div class="slide-container">
+						<div id="slide" class="slide-img">
+							<div class="menu-slide">
+								<input type="radio" name="img1" value="1" checked>
+								<input type="radio" name="img1" value="2">
+								<input type="radio" name="img1" value="3">
+								<input type="radio" name="img1" value="4">
+								<input type="radio" name="img1" value="5">
+							</div>
+	          </div>
+					</div>
+          <div class="info">
+            <div id="padres" class="info-logo">
+            </div>
+            <div class="info-text">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+elit, sed diam nonummy nibh euismod tincidunt ut
+laoreet dolore magna aliquam erat volutpat. Ut wisi
+enim ad minim veniam, quis nostrud exerci tation
+ullamcorper suscipit lobortis quis nostrud exerci tation
+ullamcorper suscipit lobortis.</p>
+<button>Inscribirse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  	<div class="section" data-anchor="sixthPage">
+      <div class="side-top">
+				<div class="side-top-left">
+					<h1>JÓVENES - VALEROSOS</h1>
+				</div>
+				<div class="side-top-right">
+					<ul>
+						<li>
+							<a href="#">▼ JÓVENES VALEROSOS</a>
+							<ul>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+      </div>
+      <div class="side-bottom">
+        <div class="info-left">
+          <div class="info-left-top">
+            <img src="img/fig02.png">
+          </div>
+          <div class="info-left-bottom"></div>
+        </div>
+        <div class="info-right">
+					<div class="slide-container">
+						<div id="slide2" class="slide-img">
+							<!--<div class="menu-slide5">
+								<input type="radio" name="img1" value="1" checked>
+								<input type="radio" name="img1" value="2">
+								<input type="radio" name="img1" value="3">
+								<input type="radio" name="img1" value="4">
+								<input type="radio" name="img1" value="5">
+							</div>-->
+	          </div>
+					</div>
+          <div class="info">
+            <div id="jovenes" class="info-logo">
+            </div>
+            <div class="info-text">
+              <p class="info-text-para">Es un entrenamiento vivencial de liderazgo y  empoderamiento personal para jóvenes entre 13 y 25 años de edad, el entrenamiento funciona en tres niveles: Valioso, Valiente y Poderoso. Durante el entrenamiento los jóvenes viven experiencias únicas diseñadas para llevarlos a espacios de aprendizaje significativo que los encamine a entender y hacer productivas sus emociones y acciones, con tal de conseguir resultados favorables sostenibles en el tiempo a nivel personal, familiar y laboral. (Durante el proceso se hace un acompañamiento por parte del staff y de psicología con sesiones personalizadas o familiares).</p>
+              <button>Inscribirse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="seventhPage">
+      <div class="side-top">
+				<div class="side-top-left">
+					<h1>JÓVENES - VALEROSOS</h1>
+				</div>
+				<div class="side-top-right">
+					<ul>
+						<li>
+							<a href="#">▼ NOSOTROS</a>
+							<ul>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+								<li><a href="#">JÓVENES VALEROSOS S.A.S</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+      </div>
+			<div class="side-bottom">
+        <div class="info-left">
+          <div class="info-left-top">
+            <img src="img/fig02.png">
+          </div>
+          <div class="info-left-bottom"></div>
+        </div>
+        <div class="info-right">
+					<div class="slide-container">
+						<div id="slide4" class="slide-img">
+							<!--<div class="menu-slide6">
+								<input type="radio" name="img1" value="1" checked>
+								<input type="radio" name="img1" value="2">
+								<input type="radio" name="img1" value="3">
+								<input type="radio" name="img1" value="4">
+								<input type="radio" name="img1" value="5">
+							</div>-->
+	          </div>
+					</div>
+          <div class="info">
+            <div id="nosotros" class="info-logo">
+            </div>
+            <div class="info-text">
+              <p class="info-text-para">Jóvenes Valerosos es una organización que nace de jóvenes para jóvenes, queriendo generar un impacto positivo en la sociedad, que lleve a las personas que pasan por nuestros procesos a ver desde otra perspectiva la oportunidad que significa se jóven, todo por medio de la inteligencia emocional, el counseling y la oratoria.
+El proyecto nace el 13 de mayo de 2017 y día de hoy, ha impactado a cerca de 830 jóvenes y sus familias</p>
+              <button>Inscribirse</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+		
+    </div>
+  </div>
+</body>
 </html>

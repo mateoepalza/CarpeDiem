@@ -1,0 +1,61 @@
+create database carpeDiem;
+
+use carpeDiem;
+
+create table usuario(
+	idUsuario int not null auto_increment,
+	nombre varchar(80) not null,
+	apellido varchar(80) not null,
+	correo varchar(120) not null,
+	telefono varchar(20) not null,
+	primary key(idUsuario)
+);
+
+create table datPersonales(
+	id int not null auto_increment,
+	nombre varchar(80) not null,
+	apellido varchar(80) not null,
+	tipoDocumento varchar(3) not null,
+	noID bigint(11) not null,
+	sexo varchar(1) not null,
+	fechanto date not null,
+	lugarnto varchar(80) not null,
+	edad int(2) not null,
+	eps varchar(80) not null,
+	direccion varchar(80) not null,
+	ciudad varchar(80) not null,
+	barrio varchar(80) not null,
+	universidad varchar(80) not null,
+	telefono int(7) not null,
+	celular bigint(10) not null,
+	correo varchar(80) not null,
+	invitacion varchar(300) not null,
+	primary key(id)
+);
+create table antMedico(
+	id int not null,
+	medicamento varchar(80) not null,
+	lesion varchar(100) not null,
+	alergia varchar(100) not null,
+	recomendacionesMedicas varchar(200) not null,
+	asma varchar(80) not null,
+	intervenciones varchar(200) not null,
+	enfermedad varchar(200) not null,
+	grupoSanguineo varchar(3) not null,
+	primary key(id),
+	foreign key (id) references datPersonales(id)
+);
+create table emerContacto(
+	id int not null,
+	parentezco varchar(50) not null,
+	nombre varchar(80) not null,
+	apellido varchar(80) not null,
+	noID bigint(11) not null,
+	direccion varchar(80) not null,
+	telefono int(7) not null,
+	celular bigint(10) not null,
+	primary key(id),
+	foreign key (id) references datPersonales(id)
+);
+yosoyjvc_david
+Davidlochupa1234

@@ -1,0 +1,174 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat Regular";
+}
+#alert-parent{
+  position: fixed;
+  width: 900px;
+  margin-top: 5%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.alert{
+  max-width: 900px;
+  padding: 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  margin-bottom: 10px;
+  border: 1px solid #f5c6cb;
+
+}
+.positive-alert{
+  max-width: 900px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  margin-bottom: 10px;
+  border: 1px solid #c3e6cb;
+
+}
+.form-container{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+#cont-back{
+    padding: 50px 0px 50px 0px;
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+table{
+  width: 900px;
+  border-collapse: collapse;
+  tr:nth-child(1){
+    text-align: center;
+  }
+  tr{
+    height: 80px;
+    td{
+      height: 80px;
+    }
+    td:nth-child(even){
+      padding-right: 5px;
+    }
+  }
+}
+input[type=text], input[type=date]{
+width: 100%;
+height: 45px;
+padding: 0px 5px;
+}
+input[type=radio]{
+width: 20px;
+height: 20px;
+margin: 0px 5px;
+}
+input[type=checkbox]{
+width: 20px;
+height: 20px;
+margin-right: 10px;
+}
+.radioOption{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.lab{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items:center;
+
+  height: 45px;
+  width:100%;
+  text-align: center;
+  background-color: #333;
+
+  font-size: 13px;
+  color: #FFF;
+}
+#form-title{
+  width: 900px;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#form-title > div{
+  width: 50%;
+}
+#form-title > div:first-child{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#form-title > div:first-child > img{
+  width: 70%;
+}
+#form-title > div:last-child > h1{
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+}
+#antecedentes{
+  td{
+    width: 25%;
+  }
+  select{
+    width: 50%;
+    height: 45px;
+    text-align: center;
+  }
+  .cual{
+    width: 50%;
+    float: right;
+  }
+}
+#emergencia{
+  td{
+    width: 25%;
+  }
+  tr:nth-child(2) td:nth-child(2){
+    text-align: center;
+    line-height: 45px;
+  }
+  tr:last-child > td{
+    text-align: center;
+  }
+  tr:nth-child(6) > td{
+    text-align: center;
+    vertical-align: middle;
+  }
+  button{
+    width: 200px;
+    height: 50px;
+    background: #333;
+    color: #FFF;
+    border: 0px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .cual{
+    width: 50%;
+    float: right;
+  }
+}
+.cual{
+  display: none;
+}
